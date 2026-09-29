@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniTool AI & SEO Suite | Free Advanced Digital & AI Tools for Creators</title>
+    <meta name="description" content="Access the ultimate all-in-one suite of free AI prompt generators, GEO content analyzers, schema markup tools, meta tag builders, and SEO utilities for US & UK professionals.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { 50: '#f0fdf4', 500: '#10b981', 600: '#059669', 700: '#047857', dark: '#0f172a' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-brand-600 to-emerald-400 p-2 rounded-xl text-slate-950 font-black text-xl tracking-wider shadow-lg shadow-brand-500/20">OT</div>
+                <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">OmniTool AI</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#tools" class="hover:text-brand-400 transition">All Tools</a>
+                <a href="#features" class="hover:text-brand-400 transition">GEO Features</a>
+                <a href="#faq" class="hover:text-brand-400 transition">FAQ</a>
+            </nav>
+            <div>
+                <span class="text-xs bg-brand-500/10 text-brand-400 border border-brand-500/20 px-3 py-1.5 rounded-full font-semibold">v2.6 Enterprise</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-20 lg:py-28 border-b border-slate-900">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.1),transparent_50%)]"></div>
+        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+            <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-semibold bg-brand-500/10 text-brand-400 border border-brand-500/20 mb-6">
+                ✨ Built for USA & UK Digital Marketers & Developers
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
+                The Ultimate <span class="bg-gradient-to-r from-brand-400 to-emerald-200 bg-clip-text text-transparent">AI & SEO Toolkit</span> for 2026
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+                Supercharge your workflow with 5 high-performance micro-utilities: AI Prompt Optimization, GEO Content Scoring, Schema Generation, and Instant Meta Audits.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#tools" class="bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-brand-500/25">Explore Free Tools Below 👇</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Tools Hub Section -->
+    <main id="tools" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+
+        <!-- Tool 1: AI Prompt Refiner & Optimizer -->
+        <section class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-brand-500/10 text-brand-400 text-xs px-4 py-1.5 rounded-bl-xl font-bold border-l border-b border-brand-500/20">Tool #1</div>
+            <div class="max-w-3xl mb-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Advanced AI Prompt Refiner</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Transform basic ideas into professional, high-converting prompts engineered for ChatGPT, Claude, and Perplexity.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <label class="block text-sm font-medium text-slate-300">Enter your basic task or idea:</label>
+                    <textarea id="promptInput" rows="4" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-4 text-slate-200 focus:outline-none focus:border-brand-500 transition" placeholder="e.g. Write an article about Python programming..."></textarea>
+                    <button onclick="optimizePrompt()" class="w-full bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold py-3.5 rounded-xl transition shadow-md">✨ Generate Master Prompt</button>
+                </div>
+                <div class="space-y-4">
+                    <label class="block text-sm font-medium text-slate-300">Optimized AI Prompt Output:</label>
+                    <textarea id="promptOutput" rows="4" readonly class="w-full bg-slate-950 border border-slate-800 rounded-xl p-4 text-emerald-400 font-mono text-sm focus:outline-none" placeholder="Your enhanced prompt will appear here..."></textarea>
+                    <button onclick="copyText('promptOutput')" class="w-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold py-3.5 rounded-xl transition border border-slate-700">📋 Copy to Clipboard</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tool 2: GEO Content Readiness Analyzer -->
+        <section class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-brand-500/10 text-brand-400 text-xs px-4 py-1.5 rounded-bl-xl font-bold border-l border-b border-brand-500/20">Tool #2</div>
+            <div class="max-w-3xl mb-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">GEO (Generative Engine Optimization) Score Checker</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Analyze your text to see if it meets structure, modular formatting, and clarity criteria for AI citation engines.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <label class="block text-sm font-medium text-slate-300">Paste your content snippet:</label>
+                    <textarea id="geoInput" rows="5" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-4 text-slate-200 focus:outline-none focus:border-brand-500 transition" placeholder="Paste your article or product description here..."></textarea>
+                    <button onclick="checkGeoScore()" class="w-full bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold py-3.5 rounded-xl transition shadow-md">📊 Calculate GEO Score</button>
+                </div>
+                <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 flex flex-col justify-center items-center text-center space-y-4">
+                    <div class="text-sm font-semibold text-slate-400">Analysis Result</div>
+                    <div id="geoScoreDisplay" class="text-5xl font-black text-slate-500">-- / 100</div>
+                    <p id="geoFeedback" class="text-sm text-slate-400">Enter text and click calculate to evaluate machine readability and AI citation potential.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tool 3: Instant JSON-LD Schema Generator -->
+        <section class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-brand-500/10 text-brand-400 text-xs px-4 py-1.5 rounded-bl-xl font-bold border-l border-b border-brand-500/20">Tool #3</div>
+            <div class="max-w-3xl mb-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">JSON-LD Schema Markup Generator</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Generate valid Article & Organization schema markup instantly to boost Google search rich snippet indexing.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">Article Title:</label>
+                        <input type="text" id="schemaTitle" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-brand-500 text-sm" placeholder="e.g. Ultimate SEO Guide 2026">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">Author Name:</label>
+                        <input type="text" id="schemaAuthor" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-brand-500 text-sm" placeholder="e.g. Fatima Nadir">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">Publisher Website URL:</label>
+                        <input type="text" id="schemaUrl" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-brand-500 text-sm" value="https://trendsphere123.blogspot.com">
+                    </div>
+                    <button onclick="generateSchema()" class="w-full bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold py-3.5 rounded-xl transition shadow-md">⚙️ Generate Schema Code</button>
+                </div>
+                <div class="space-y-4">
+                    <label class="block text-sm font-medium text-slate-300">JSON-LD Output:</label>
+                    <textarea id="schemaOutput" rows="8" readonly class="w-full bg-slate-950 border border-slate-800 rounded-xl p-4 text-emerald-400 font-mono text-xs focus:outline-none" placeholder="Schema output will appear here..."></textarea>
+                    <button onclick="copyText('schemaOutput')" class="w-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold py-3 rounded-xl transition border border-slate-700 text-sm">📋 Copy Schema</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tool 4 & 5: Meta Tags Generator & Keyword Density Counter -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Tool 4 -->
+            <section class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl relative">
+                <div class="absolute top-0 right-0 bg-brand-500/10 text-brand-400 text-xs px-3 py-1 rounded-bl-lg font-bold border-l border-b border-brand-500/20">Tool #4</div>
+                <h3 class="text-xl font-bold text-white mb-2">Meta Tag Generator</h3>
+                <p class="text-slate-400 text-sm mb-4">Create clean HTML meta tags for Google SERP optimization.</p>
+                <div class="space-y-3">
+                    <input type="text" id="metaTitleInput" placeholder="Page Title (Max 60 chars)" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-brand-500">
+                    <textarea id="metaDescInput" rows="2" placeholder="Meta Description (Max 160 chars)" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm text-slate-200 focus:outline-none focus:border-brand-500"></textarea>
+                    <button onclick="generateMetaTags()" class="w-full bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold py-2.5 rounded-xl transition text-sm">Generate Tags</button>
+                    <textarea id="metaOutput" rows="3" readonly class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-emerald-400 font-mono text-xs focus:outline-none" placeholder="HTML Meta tags..."></textarea>
+                </div>
+            </section>
+
+            <!-- Tool 5 -->
+            <section class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl relative">
+                <div class="absolute top-0 right-0 bg-brand-500/10 text-brand-400 text-xs px-3 py-1 rounded-bl-lg font-bold border-l border-b border-brand-500/20">Tool #5</div>
+                <h3 class="text-xl font-bold text-white mb-2">Word & Character Counter</h3>
+                <p class="text-slate-400 text-sm mb-4">Instant word count analysis for SEO content optimization.</p>
+                <div class="space-y-3">
+                    <textarea id="wordInput" rows="4" oninput="countWords()" placeholder="Paste text here to count words and characters..." class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm text-slate-200 focus:outline-none focus:border-brand-500"></textarea>
+                    <div class="grid grid-cols-2 gap-4 pt-1">
+                        <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-center">
+                            <div class="text-xs text-slate-400">Total Words</div>
+                            <div id="wordCount" class="text-xl font-bold text-brand-400">0</div>
+                        </div>
+                        <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-center">
+                            <div class="text-xs text-slate-400">Total Characters</div>
+                            <div id="charCount" class="text-xl font-bold text-brand-400">0</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer Information & GEO Context -->
+    <footer id="faq" class="border-t border-slate-900 bg-slate-950 mt-24 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 text-sm space-y-4">
+            <p>© 2026 OmniTool AI Suite. Engineered for High-Speed Organic Ranking across USA & UK Search Markets.</p>
+            <p class="text-xs text-slate-600">Built with pure HTML, Tailwind CSS & JavaScript. Fully responsive and instant-loading.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Functionality -->
+    <script>
+        function optimizePrompt() {
+            const input = document.getElementById('promptInput').value.trim();
+            if(!input) {
+                alert('Please enter a basic prompt or idea first!');
+                return;
+            }
+            const enhanced = `Act as an expert USA/UK market consultant. Provide an in-depth, highly structured, professional analysis regarding: "${input}". Ensure modular headings, bullet points, and data-backed insights optimized for enterprise readers.`;
+            document.getElementById('promptOutput').value = enhanced;
+        }
+
+        function checkGeoScore() {
+            const text = document.getElementById('geoInput').value.trim();
+            if(!text) {
+                alert('Please paste some text content to check GEO score!');
+                return;
+            }
+            let score = 50;
+            if(text.includes('1.') || text.includes('•') || text.includes('-')) score += 20;
+            if(text.length > 200) score += 20;
+            if(text.toLowerCase().includes('strategy') || text.toLowerCase().includes('framework') || text.toLowerCase().includes('ai')) score += 10;
+            if(score > 98) score = 98;
+
+            const display = document.getElementById('geoScoreDisplay');
+            const feedback = document.getElementById('geoFeedback');
+            display.innerText = score + ' / 100';
+            
+            if(score >= 80) {
+                display.className = "text-5xl font-black text-brand-400";
+                feedback.innerText = "Excellent! High machine readability and strong AI citation potential.";
+            } else if(score >= 60) {
+                display.className = "text-5xl font-black text-amber-400";
+                feedback.innerText = "Good structure, but add more bullet points and tables to maximize AI visibility.";
+            } else {
+                display.className = "text-5xl font-black text-rose-400";
+                feedback.innerText = "Needs improvement. Use clearer headings and structured lists for better GEO ranking.";
+            }
+        }
+
+        function generateSchema() {
+            const title = document.getElementById('schemaTitle').value || 'Default Title';
+            const author = document.getElementById('schemaAuthor').value || 'Fatima Nadir';
+            const url = document.getElementById('schemaUrl').value || 'https://trendsphere123.blogspot.com';
+
+            const schema = `{\n  "@context": "https://schema.org",\n  "@type": "Article",\n  "headline": "${title}",\n  "author": {\n    "@type": "Person",\n    "name": "${author}"\n  },\n  "publisher": {\n    "@type": "Organization",\n    "name": "OmniTool AI",\n    "url": "${url}"\n  },\n  "datePublished": "2026-09-29"\n}`;
+            document.getElementById('schemaOutput').value = schema;
+        }
+
+        function generateMetaTags() {
+            const title = document.getElementById('metaTitleInput').value || 'OmniTool Suite';
+            const desc = document.getElementById('metaDescInput').value || 'Free digital tools.';
+            const tags = `<title>${title}</title>\n<meta name="description" content="${desc}">\n<meta name="robots" content="index, follow">`;
+            document.getElementById('metaOutput').value = tags;
+        }
+
+        function countWords() {
+            const text = document.getElementById('wordInput').value;
+            const words = text.trim() === '' ? 0 : text.trim().split(/\s+/).length;
+            const chars = text.length;
+            document.getElementById('wordCount').innerText = words;
+            document.getElementById('charCount').innerText = chars;
+        }
+
+        function copyText(elementId) {
+            const copyText = document.getElementById(elementId);
+            copyText.select();
+            navigator.clipboard.writeText(copyText.value);
+            alert('Copied successfully to clipboard!');
+        }
+    </script>
+</body>
+</html>
